@@ -7,7 +7,40 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
         }
+        form{
+            background-color: white;
+            width: 400px;
+            height: 250px;
+            padding: 30px;
+            text-align: justify;
+            margin: auto;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.434);
+        }
+        label:hover{
+            color: blue;
+        }
+       
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.544);
+        }
+        #submit, #reset{
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+          
+        }
+        #submit:hover, #reset:hover{
+            background-color: blue;
+            color: white;
+            transition: 0.5s;
+        }
+       
     </style>
     <title>Formulário</title>
 </head>
@@ -26,7 +59,7 @@
             <label for="senha"> Senha :</label>
             <input type="password" name="senha" id="senha">
         </p>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="submit">
     </p>
 </form>
 </html>
