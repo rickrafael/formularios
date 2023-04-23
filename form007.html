@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+        }
+        form{
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            padding: 30px;
+            text-align: justify;
+            margin: auto;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.434);
+        }
+        label:hover{
+            color: blue;
+        }
+       
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.544);
+        }
+        #submit, #reset{
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+          
+        }
+        #submit:hover, #reset:hover{
+            background-color: blue;
+            color: white;
+            transition: 0.5s;
+        }
+       
+    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
@@ -40,8 +78,8 @@
                 <textarea name="msg" id="msg" cols="40" rows="10"></textarea>
              </p>
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetar">
+            <input type="submit" value="Enviar" id="submit">
+            <input type="reset" value="Resetar" id="reset">
         </p>
     </form>
     
